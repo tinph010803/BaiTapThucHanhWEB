@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form action="" method="post">
-        <p>Name: <br>
-        <input type="text" name="txtName" value="" size="20" maxlength="20"></p>
-        <p>Telephone Number: <br>
-            <input type="tel" name="txtTel" value="" size="20" maxlength="20"></p>
-        </p>
-        <p>Email: <br>
-            <input type="text" name="txtEmail value="" size="20" maxlength="20"></p>
-        <p>Favorite Color: <br>
-            <input type="text" name="txtColor" value="" size="20" maxlength="20"></p>
-        <p>Date of Birth: <br>
-            <input type="text" name="txtDate" value="" size="20" maxlength="20"></p>
-        <p><input type="submit" value="submit"></p>
+<style>
+    input {
+        position: relative;
+        bottom: 12px;
+    }
+    button{
+        position: relative;
+        top: 20px;
+        right: 13px;
+    }
+    div{
+        padding-left: 8px;
+        width: 250px;
+        height: 380px;
+        position: relative;
+        left: 50%;
+        top: 70px;
+        box-shadow: 2px 2px 1px 4px rgb(75, 73, 73);
+    }
+</style>
 
-    </form>
+<body>
+    <div>
+        <p>Name:</p>
+        <input type="">
+        <p>Telephone Number:</p>
+        <input type="">
+        <p>Email:</p>
+        <input type="">
+        <p>Favorite Color:</p>
+        <input type="color" name="favcolor" value="#251D90">
+        <p>Date of Birth</p>
+        <input type="date" name="bday">
+        <button>Submit</button>
+    </div>
+
 </body>
+
 </html>

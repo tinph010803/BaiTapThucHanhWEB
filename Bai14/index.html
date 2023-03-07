@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+        position: relative;
+        top: 275px;
+    }
+    div{
+        padding-left: 10px;
+        width: 50%;
+        height: 450px;
+        position: relative;
+        left: 100px;
+        top: 50px;
+        box-shadow: 2px 2px 2px 4px rgb(97, 92, 92);
+    }
+</style>
+
+<body>
+    <div>
+        <h1 style="font-size: 50px;">Contact Us</h1>
+        <p style="font-size: 25px;">Use the following form to send a message to Example Cafe</p>
+        <table>
+            <tr>
+                <td><label for="emailFrom">Your email</label></td>
+                <td><input type="text" name="txtForm" id="emailForm" size="25" tabindex="2" maxlength="300"></td>
+            </tr>
+            <tr>
+                <td><label for="emailBody">Message</label></td>
+                <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="how">How did you hear of us?</label></td>
+                <td>
+                    <select name="drop down">
+                        <option value="Google">Google</option>
+                        <option value="CocCoc">CocCoc</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Newsletter</td>
+                <td><input type="checkbox">Ensure this box is checked if you wuold like to receive email updates</td>
+            </tr>
+            <button>Send message</button>
+        </table>
+    </div>
+</body>
+</html>

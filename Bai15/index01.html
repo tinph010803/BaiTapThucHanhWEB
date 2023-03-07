@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+        position: relative;
+        top: 60px;
+    }
+    button{
+        position: relative;
+        top: 70px;
+    }
+    fieldset{
+        width: 40%;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend>Your message:</legend>
+        <table>
+            <tr>
+                <td><label for="emailTo">To</label></td>
+                <td><input type="text" name="txtTo" id="emailTo" readonly="readonly" size="25" value="Example Cafe">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emailFrom">Your email</label></td>
+                <td><input type="text" name="txtForm" id="emailForm" size="25" tabindex="2" maxlength="300"></td>
+            </tr>
+            <tr>
+                <td><label for="emailBody">Message</label></td>
+                <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset style="height:110px;">
+        <legend>How you found us:</legend>
+        <table>
+            <div id="box-size">
+                <tr>
+                    <td><label for="how">How did you hear of us?</label></td>
+                    <td>
+                        <select name="drop down">
+                            <option value="Google">Google</option>
+                            <option value="CocCoc">CocCoc</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Newsletter</td>
+                    <td><input type="checkbox">Ensure this box is checked if you wuold like to receive email updates
+                    </td>
+                </tr>
+            </div>
+            <button>Send message</button>
+        </table>
+    </fieldset>
+
+</body>
+
+</html>

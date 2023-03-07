@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        table, tbody, td{
+            border: 2px solid black;
+            width: 200px;
+            height: 30px;
+        }
+        .h1{
+            background-color: orange;
+        }
+        .h2{
+            background-color: yellow;
+        }
+        .h0{
+            background-color: white;
+        }
+        div{
+            background-color: bisque;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+    <body>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="h0">1</td>
+                        <td colspan="4" class="h0">2</td>  
+                    </tr>
+                    <tr>
+                        <td rowspan="3" class="h0">3</td>
+                        <td class="h1">4</td>
+                        <td class="h1">5</td>
+                        <td rowspan="2" class="h2">6</td>
+                    </tr>
+                    <tr><td class="h1">7</td>
+                        <td class="h1">8</td>
+                    </tr>
+                    <tr><td colspan="2" class="h2">9</td> 
+                        <td class="h2">10</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </body>
+
+</html>

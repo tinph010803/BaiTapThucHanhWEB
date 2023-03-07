@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #box-all {
+        background-color: rgb(248, 205, 126);
+        width: 45%;
+        height: 100%;
+        position: relative;
+        left: 30%;
+        box-shadow: 1px 1px 5px 5px rgb(150, 143, 143);
+        border-radius: 10px;
+    }
+    /* .box{
+        position: relative;
+        left: 430px;
+    } */
+    #end {
+        position: relative;
+        left: 36%;
+    } 
+
+    .send {
+        padding-right: 20px;
+    }
+
+    .clear {
+        padding-left: 20px;
+    }
+</style>
+
+<body>
+    <div id="box-all">
+        <h1 style="text-align: center;">Survey Form</h1>
+        <div class="box">
+            <p>If you are interested in purchasing one or more of our products, before ordering please complete <br>
+                some or all of the following survey for our marketing department. Answering any question is <br>
+                optional, and all information will be kept stritly confidential. Thank you very much for your time!</p>
+            <ol>
+                <li>What is your name?<br><input type="text" name="name" id="txtname"></li>
+                <li>What is your date of birth? <br>
+                    <table>
+                        <tr>
+                            <td>Month:
+                                <select name="month" id="txtmonth">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+
+                            </td>
+                            <td>Date:
+                                <select name="date" id="txtdate">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                </select>
+                            </td>
+                            <td>Year:
+                                <select name="year" id="txtyear">
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                </li>
+                <li>What is your mailing address (if you wuold like to have a hard copy of our catalog sent to you)?
+                    <br>
+                    <textarea name="address" id="txtaddress" cols="30"
+                        rows="3">Number/P.O. Box/Route: Street/Avenue/Road: City: State/Zip:</textarea>
+                </li>
+                <li>What is your email address? <br>
+                    <input type="text" name="email" id="txtemail">
+                </li>
+                <li>Have you viewed our online product catalog?<br>
+                    <input type="radio" name="one" id="Yes">Yes
+                    <input type="radio" name="one" id="No">No
+                </li>
+                <li>If so, what product(s), besides the one you are ordering, might you be interested in purchasing <br>
+                    in the future? (Check all that apply) <br>
+                    <input type="checkbox" name="Vcr" id="txtVcr">VCR <br>
+                    <input type="checkbox" name="Tv" id="txtTv">Big Screen TV <br>
+                    <input type="checkbox" name="Audio" id="txtAudio">Audio Equipment <br>
+                    <input type="checkbox" name="Video" id="txtVideo">Video Equipment <br>
+                    <input type="checkbox" name="Camera" id="txtCamera">Camera Equipment <br>
+                    <input type="checkbox" name="Other" id="txtOther">Other <input type="text" name="other"
+                        id="txtother" value="Please List:">
+                </li>
+                <li>Do you have any questions, comments or suggestions before proceeding to the Order Form? <br>
+                    <textarea name="input" id="txtinput" cols="45" rows="5">Your Input:</textarea>
+                </li>
+            </ol>
+        </div>
+
+        <table id="end">
+            <tr>
+                <td class="send"><button>Send Form</button></td>
+                <td class="clear"><button>Clear Form</button></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

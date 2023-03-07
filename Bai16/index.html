@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+       
+        .box{
+            position: relative;
+            bottom: 10px;
+        }
+    </style>
+
+<body>
+    <h1 style="font-size: 50px; ">Travel reservation form</h1><br>
+    <h2 style="font-size: 25px; ">*denotes mandotory</h2>
+    <p>Full name*:</p>
+    <input class="box" type="text" name="Fname" id="txtname" placeholder="FirstName LastName">
+    <p>Email address*:</p>
+    <input class="box" type="text" name="email" id="txtemail" placeholder="EMAIL_ADDRESS">
+    <p>Select Tour Package*:</p>
+    <select class="box" style="width: 100px; height: 25px;" name="package" id="txtPackage">
+        <option value="Goa">Goa</option>
+        <option value="Boa">Boa</option>
+    </select>
+    <p>Arrival date*:</p>
+    <input class="box" type="text" name="Adate" id="txtdate" placeholder="m/d/y">
+    <p>Number of persons*:</p>
+    <input class="box" type="text" name="number" id="txtnumber" placeholder="UNKNOWN_TYPE">
+    <p>What would you want to avil?*</p>
+    <p>Boarding <input type="checkbox" name="boarding" id="txtboarding"></p>
+    <p>Fooding <input type="checkbox" name="fooding" id="txtfooding"></p>
+    <p>Sight seeing <input type="checkbox" name="seeding" id="txtseeing"></p>
+    <p>Discord Coupon code:</p>
+    <input type="text" name="discord" id="txtdiscord" placeholder="UNKNOWN_TYPE">
+    <p>Terms and conditions*</p>
+    <table>
+        <tr>
+            <td><input type="radio" name="agree" id="txtaree">I agree</td>
+            <td><input type="radio" name="disagree" id="txtdisagree">I disagree</td>
+        </tr>
+    </table>
+    <button>Complete reservation</button>
+</body>
+
+</html>
